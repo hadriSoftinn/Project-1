@@ -1,10 +1,12 @@
 {
+    "extends": "@tsconfig/recommended/tsconfig.json",
     "compilerOptions": {
         "removeComments": true,
-        "outFile": "app/index.js"
+        "lib": ["ES2018", "DOM"]
+        // "outFile": "app/index.js"
     },
     "include": ["src/**/*"],
-    "watchOptions": {
+    "watchOptions": { // always update the binary code from the target directory whenever there's changes on ts files.
         "excludeDirectories": ["**/node_modules", "app"]
     }
 }
