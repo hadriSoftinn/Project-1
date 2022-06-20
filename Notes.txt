@@ -20,3 +20,16 @@ Single-file Compilation
 - combines all ts file into one single js file
 - only single file must be loaded for the app to work in browser
 - webpack, babel needed
+
+Project References
+- seperate app into logical silos
+- can customize build steps for each sub Project
+- avoid building unnecessary files
+- "build": "tsc --build" // rebuil the child project
+
+Type Declacration files
+- code hint, autocompletion and precompile warning
+- type checking
+
+Libraries
+- 
